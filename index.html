@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>YouTube字幕取得app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>
+        <span class="gradient-text">
+    ** YouTube Subtitle **
+        </span>
+    </h1>
+
+<div class="card">
+    <input id="url" type="text" placeholder="YouTubeのURL"><br>
+
+    <label>
+        <input type="radio" name="lang" value="ja" checked>
+        <p>日本語</p>
+    </label>
+
+    <label>
+        <input type="radio" name="lang" value="ko">
+        <p>韓国語</p>
+    </label><br>
+
+    <button id="btn" class="btn btn-primary">
+        字幕を表示♡
+    </button>
+
+    <pre id="result"></pre>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
+
+<!--
+/////////////////////// Sample URL /////////////////////////
+https://youtu.be/JlgT56YU8gc?si=RNG-fKAwpaduh4wf
+https://www.youtube.com/watch?v=JlgT56YU8gc
+上記のURLどちらからでもIDの11文字を取得可能 ex) "JlgT56YU8gc"
+-->

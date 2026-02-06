@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+body {
+    font-family: 'Arial', 'ヒラギノ角ゴ Pro', sans-serif;
+    background: linear-gradient(135deg, #fff0f7 0%, #ffe6f0 50%, #ffd6e8 100%);
+    min-height: 100vh;
+    padding: 20px;
+    }
+
+h1 {
+    max-width: 400px;
+    margin: 0 auto 20px;
+    padding: 0 30px;
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, #e94196, #d81b84);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 2px solid #ffe6f0;
+    border-radius: 15px;
+    font-family: inherit;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin: 0 6px 0 0;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #e94196;
+    box-shadow: 0 0 0 3px rgba(233, 65, 150, 0.1);
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(224, 33, 138, 0.3);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #e94196 0%, #d81b84 100%);
+    color: white;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(224, 33, 138, 0.5);
+}
+
+/* カード */
+.card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(224, 33, 138, 0.15);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+label {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 16px;
+}
+
+#result {
+    color: #666;
+    line-height: 1.6;
+}
